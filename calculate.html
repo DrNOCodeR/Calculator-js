@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Калькулятор</title>
+    </head>
+    <style>
+        .bac{background-color: rgb(31, 31, 31);}
+        .cube{width: 800px; height: 700px; position: absolute; left: 30%; right: 30%; top: 10%;}
+        .te{height: 30px; font-size: 5em; color: white; text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: 550;}
+        .vvod{height: 30px; width: 70%; position: absolute; left: 15%; right: 15%; top: 28%; border-radius: 5px; border-color: white; font-size: 30px; padding-left: 20px;}
+        .vvod2{height: 30px; width: 70%; position: absolute; left: 15%; right: 15%; top: 36% ;border-radius: 5px; border-color: white; font-size: 30px; padding-left: 20px;}
+        .gr{height: 100px; width: 100%; position: absolute; top: 45%; display: flex; flex-direction: row; justify-content: space-around;}
+        .bu{background-color: green; height: 80px; width: 180px; border-radius: 10px; border-color: green; font-size: 2em; color:white;}
+        .bu2{background-color: red; height: 80px; width: 180px; border-radius: 10px; border-color: red; font-size: 2em; color:white;}
+        .bu3{background-color: blue; height: 80px; width: 180px; border-radius: 10px; border-color: blue; font-size: 2em; color:white;}
+        .bu4{background-color: orange; height: 80px; width: 180px; border-radius: 10px; border-color: orange;font-size: 2em; color:white;}
+        .tu{height: 70px; width: 100%; position: absolute; top: 59%; font-size: 3em; background-color: rgb(31, 31, 31); color: aqua; text-align:
+             center; font-family: 'Courier New', Courier, monospace; font-weight: 550; border-radius: 5px; border-color: aqua;}
+        .tu:hover{background-color: aqua; transition: 0.5s; color:rgb(31, 31, 31) ;}
+        .qu{height: 150px; width: 100%; background-color: white; position: absolute; top: 72%; font-size: 3em; color: rgb(31, 31, 31); text-align: center; 
+            font-family: 'Courier New', Courier, monospace; font-weight: 550; border-radius: 5px;}
+    </style>
+    <body class="bac">
+        <div class="cube">
+            <p class="te">Калькулятор</p>
+            <input type="number" class="vvod" id="v1">
+            <input type="number" class="vvod2" id="v2">
+            <div class="gr">
+                <button class="bu" id="plus">+</button>
+                <button class="bu2" id="minus">-</button>
+                <button class="bu3" id="multiple">×</button>
+                <button class="bu4" id="del">/</button>
+            </div>
+            <button type="submit" class="tu" id="submit">Вычислить</button>
+            <div class="qu">Результат:
+                <div id="result"></div>
+            </div>
+        </div>
+       <script src="calculate.js"></script>
+    </body>
+</html>
